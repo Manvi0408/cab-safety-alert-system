@@ -16,20 +16,19 @@ interface EmergencyContact {
 
 const EmergencyContacts = () => {
   const [contacts, setContacts] = useState<EmergencyContact[]>([
-    const emergencyContacts = [
-  {
-    id: "1",
-    name: "Khushi Sharma",
-    phone: "+91 85958 41520",
-    relationship: "Best Friend"
-  },
-  {
-    id: "2",
-    name: "Mom",
-    phone: "+91 95997 22152",
-    relationship: "Mother"
-  }
-];
+    {
+      id: "1",
+      name: "Khushi Sharma",
+      phone: "+91 85958 41520",
+      relationship: "Best Friend"
+    },
+    {
+      id: "2",
+      name: "Mom",
+      phone: "+91 95997 22152",
+      relationship: "Mother"
+    }
+  ]);
   
   const [isAdding, setIsAdding] = useState(false);
   const [newContact, setNewContact] = useState({ name: "", phone: "", relationship: "" });
