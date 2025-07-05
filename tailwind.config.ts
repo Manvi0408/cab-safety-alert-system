@@ -86,8 +86,7 @@ export default {
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'emergency': 'var(--shadow-emergency)',
-				'glow': 'var(--shadow-glow)',
-				'3d': 'var(--shadow-3d)'
+				'glow': 'var(--shadow-glow)'
 			},
 			transitionProperty: {
 				'smooth': 'var(--transition-smooth)'

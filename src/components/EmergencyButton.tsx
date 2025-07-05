@@ -102,7 +102,7 @@ const EmergencyButton = () => {
         <div className="grid grid-cols-2 gap-3 pt-4 border-t">
           <Button variant="outline" size="sm" className="flex items-center gap-2">
             <Phone className="h-4 w-4" />
-            Call 911
+            Call 100
           </Button>
           <Button variant="outline" size="sm" className="flex items-center gap-2">
             <Shield className="h-4 w-4" />

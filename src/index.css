@@ -8,27 +8,27 @@ All colors MUST be HSL.
 
 @layer base {
 :root {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
+    --background: 248 250% 98%;
+    --foreground: 230 15% 15%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 100%;
+    --card-foreground: 230 15% 15%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 15% 15%;
 
     --primary: 242 47% 28%;
     --primary-foreground: 248 250% 98%;
     --primary-glow: 242 65% 45%;
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 248 100% 97%;
+    --secondary-foreground: 242 47% 28%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 248 100% 97%;
+    --muted-foreground: 230 8% 55%;
 
     --accent: 283 65% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 248 250% 98%;
 
     --emergency: 0 85% 60%;
     --emergency-foreground: 0 0% 100%;
@@ -43,22 +43,20 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 18%;
+    --border: 248 20% 90%;
+    --input: 248 20% 94%;
     --ring: 242 47% 28%;
 
     --gradient-primary: linear-gradient(135deg, hsl(242 47% 28%), hsl(242 65% 45%));
     --gradient-emergency: linear-gradient(135deg, hsl(0 85% 60%), hsl(0 100% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(248 250% 98%), hsl(248 100% 97%));
     --gradient-accent: linear-gradient(135deg, hsl(283 65% 65%), hsl(242 65% 45%));
 
-    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
-    --shadow-emergency: 0 8px 30px -8px hsl(0 85% 60% / 0.5);
-    --shadow-glow: 0 0 40px hsl(242 65% 45% / 0.4);
-    --shadow-3d: 0 10px 25px -5px hsl(0 0% 0% / 0.4), 0 4px 6px -2px hsl(0 0% 0% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(242 47% 28% / 0.1);
+    --shadow-emergency: 0 8px 30px -8px hsl(0 85% 60% / 0.3);
+    --shadow-glow: 0 0 40px hsl(242 65% 45% / 0.2);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-3d: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
@@ -125,33 +123,5 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-  }
-
-  .card-3d {
-    @apply transform-gpu transition-all duration-300;
-    box-shadow: var(--shadow-3d);
-  }
-
-  .card-3d:hover {
-    @apply -translate-y-2 scale-105;
-    box-shadow: 0 20px 40px -10px hsl(0 0% 0% / 0.5), 0 8px 12px -4px hsl(0 0% 0% / 0.4);
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite alternate;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-  }
-
-  @keyframes glow {
-    from { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
-    to { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
   }
 }

@@ -33,10 +33,10 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative py-12 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-10">
           <img 
-            src="/lovable-uploads/2be1b42d-35d9-4d2c-9ed9-f5153d1ea081.png" 
-            alt="Women safety statistics and awareness" 
+            src={heroImage} 
+            alt="Women safety community" 
             className="w-full h-full object-cover"
           />
         </div>
