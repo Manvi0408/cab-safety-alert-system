@@ -16,8 +16,8 @@ interface EmergencyContact {
 
 const EmergencyContacts = () => {
   const [contacts, setContacts] = useState<EmergencyContact[]>([
-    { id: "1", name: "Khushi Sharma", phone: "9599722152", relationship: "Friend" },
-    { id: "2", name: "Mom", phone: "9968502412", relationship: "Mother" },
+    { id: "1", name: "Sarah Johnson", phone: "(555) 123-4567", relationship: "Sister" },
+    { id: "2", name: "Mom", phone: "(555) 987-6543", relationship: "Mother" },
   ]);
   
   const [isAdding, setIsAdding] = useState(false);
@@ -108,7 +108,7 @@ const EmergencyContacts = () => {
                 type="tel"
                 value={newContact.phone}
                 onChange={(e) => setNewContact({ ...newContact, phone: e.target.value })}
-                placeholder="(+91) 99xxxxxxxx"
+                placeholder="(555) 123-4567"
               />
             </div>
             <div className="space-y-2">
