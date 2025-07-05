@@ -108,7 +108,7 @@ const EmergencyContacts = () => {
                 type="tel"
                 value={newContact.phone}
                 onChange={(e) => setNewContact({ ...newContact, phone: e.target.value })}
-                placeholder="(555) 123-4567"
+                placeholder="(+91) 99xxxxxxxx"
               />
             </div>
             <div className="space-y-2">
