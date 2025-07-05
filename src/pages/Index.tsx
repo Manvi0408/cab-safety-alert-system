@@ -6,10 +6,8 @@ import EmergencyContacts from "@/components/EmergencyContacts";
 import SafetyResources from "@/components/SafetyResources";
 import { Shield, Users, Phone, Bell } from "lucide-react";
 import heroImage from "@/assets/hero-safety.jpg";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-hero">
+  return <div className="min-h-screen bg-gradient-hero">
       {/* Header */}
       <header className="bg-card/80 backdrop-blur-sm border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -19,7 +17,7 @@ const Index = () => {
                 <Shield className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">SafeGuard</h1>
+                <h1 className="font-extrabold mx-px px-[3px] text-2xl text-[#1c5673]">SheSecure</h1>
                 <p className="text-xs text-muted-foreground">Women's Safety Response System</p>
               </div>
             </div>
@@ -34,11 +32,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative py-12 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img 
-            src="/lovable-uploads/2be1b42d-35d9-4d2c-9ed9-f5153d1ea081.png" 
-            alt="Women safety statistics and awareness" 
-            className="w-full h-full object-cover"
-          />
+          <img src="/lovable-uploads/2be1b42d-35d9-4d2c-9ed9-f5153d1ea081.png" alt="Women safety statistics and awareness" className="w-full h-full object-cover" />
         </div>
         <div className="relative container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
@@ -169,8 +163,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
