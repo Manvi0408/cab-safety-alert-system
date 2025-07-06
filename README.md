@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# SafeGuard Emergency Response System
 
-## Project info
+A modern, responsive web app for women's safety, featuring real-time emergency alerts via SMS and email, location sharing, and trusted contact management.
 
-**URL**: https://lovable.dev/projects/7b06420c-7d89-4b79-8331-b03ac2fc9e03
+## 🚀 Features
 
-## How can I edit this code?
+- **Emergency Button**: Instantly send alerts to all emergency contacts via SMS and email, including your live location and a Google Maps link.
+- **Contact Management**: Add, edit, and test emergency contacts with phone and email fields.
+- **Location Sharing**: Automatically includes your current address and coordinates in every alert.
+- **Test Messaging**: Test SMS and email delivery to any contact with a single click.
+- **Customizable Alerts**: Easily update your contact list and alert message templates.
+- **Modern UI**: Built with React, Vite, Tailwind CSS, and shadcn/ui for a beautiful, accessible experience.
 
-There are several ways of editing your application.
+## 🆓 Free Messaging APIs Used
 
-**Use Lovable**
+- **EmailJS**: 200 free emails/month ([emailjs.com](https://www.emailjs.com/))
+- **TextBelt**: 1 free SMS/day ([textbelt.com](https://textbelt.com/))
+- **Geolocation**: Built-in browser API
+- **Reverse Geocoding**: [BigDataCloud](https://www.bigdatacloud.com/)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7b06420c-7d89-4b79-8331-b03ac2fc9e03) and start prompting.
+## 🛠️ Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### 1. Clone the Repository
+```bash
+# Using HTTPS
+git clone https://github.com/your-username/empower-her-response-system.git
+cd empower-her-response-system
 ```
 
-**Edit a file directly in GitHub**
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3. Configure Environment Variables
+- Copy `.env.example` to `.env.local` and fill in your EmailJS and TextBelt keys.
+- See `MESSAGING_SETUP.md` for a step-by-step guide.
 
-**Use GitHub Codespaces**
+### 4. Start the Development Server
+```bash
+npm run dev
+```
+- Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## ✨ Usage
 
-## What technologies are used for this project?
+- **Add Contacts**: Enter name, phone, email, and relationship.
+- **Test Alerts**: Click the message icon (📨) to send a test SMS/email.
+- **Send Emergency Alert**: Press the EMERGENCY ALERT button to notify all contacts with your location.
 
-This project is built with:
+## 📦 Build for Production
+```bash
+npm run build
+```
+- Output is in the `dist/` folder.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📋 Project Structure
 
-## How can I deploy this project?
+- `src/components/` — UI components (EmergencyButton, EmergencyContacts, etc.)
+- `src/services/` — Messaging and location logic
+- `src/pages/` — Main app pages
+- `.env.local` — Your API keys (never commit this!)
 
-Simply open [Lovable](https://lovable.dev/projects/7b06420c-7d89-4b79-8331-b03ac2fc9e03) and click on Share -> Publish.
+## 📝 Documentation
+- See `MESSAGING_SETUP.md` for full setup and API instructions.
 
-## Can I connect a custom domain to my Lovable project?
+## 🛡️ Security & Privacy
+- All sensitive keys are stored in environment variables.
+- No personal data is stored on a server; all alerts are sent directly from your device.
 
-Yes, you can!
+## 🙏 Credits
+- [EmailJS](https://www.emailjs.com/)
+- [TextBelt](https://textbelt.com/)
+- [BigDataCloud](https://www.bigdatacloud.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📧 Support
+For help, open an issue or check the console for error messages.
+Live on: https://empower-her-response-system-bexe.vercel.app/
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+**Empowering safety, one alert at a time.**
