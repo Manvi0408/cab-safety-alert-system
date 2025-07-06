@@ -11,13 +11,6 @@ A modern, responsive web app for women's safety, featuring real-time emergency a
 - **Customizable Alerts**: Easily update your contact list and alert message templates.
 - **Modern UI**: Built with React, Vite, Tailwind CSS, and shadcn/ui for a beautiful, accessible experience.
 
-## 🆓 Free Messaging APIs Used
-
-- **EmailJS**: 200 free emails/month ([emailjs.com](https://www.emailjs.com/))
-- **TextBelt**: 1 free SMS/day ([textbelt.com](https://textbelt.com/))
-- **Geolocation**: Built-in browser API
-- **Reverse Geocoding**: [BigDataCloud](https://www.bigdatacloud.com/)
-
 ## 🛠️ Getting Started
 
 ### 1. Clone the Repository
@@ -68,18 +61,10 @@ npm run build
 - All sensitive keys are stored in environment variables.
 - No personal data is stored on a server; all alerts are sent directly from your device.
 
-## 🙏 Credits
-- [EmailJS](https://www.emailjs.com/)
-- [TextBelt](https://textbelt.com/)
-- [BigDataCloud](https://www.bigdatacloud.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [Vite](https://vitejs.dev/)
-- [React](https://react.dev/)
-
 ## 📧 Support
 For help, open an issue or check the console for error messages.
-Live on: https://empower-her-response-system-bexe.vercel.app/
 
 ---
 
+Live on: https://empower-her-response-system-bexe.vercel.app/
 **Empowering safety, one alert at a time.**
